@@ -1,0 +1,24 @@
+//Commands listed below will get reponse from the Application 
+
+
+
+// Command 
+
+1) how are you 
+2)what's your name 
+3)Neeraj (developer name)
+4)hello //hay
+5)Java tutorial
+6)Python tutorial
+7)Maharashtra coronavirus
+8)covid test center in pune
+9)map
+10)news
+11)YouTube
+12)hackerrank
+13)GitHub
+
+----------------------############--------------------------------
+
+
+

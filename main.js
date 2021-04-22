@@ -64,6 +64,14 @@ recognition.addEventListener("result", (e) => {
         texts.appendChild(p);
       }
       if (
+        text.includes("Help") || ("help")
+      ) {
+        p = document.createElement("p");
+        p.classList.add("replay");
+        p.innerText = "Which kind of help you need Sir";
+        texts.appendChild(p);
+      }
+      if (
         text.includes("Java tutorial") || text.includes("java tutorial")
       ) {
         p = document.createElement("p");

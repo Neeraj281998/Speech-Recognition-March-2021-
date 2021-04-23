@@ -64,14 +64,6 @@ recognition.addEventListener("result", (e) => {
         texts.appendChild(p);
       }
       if (
-        text.includes("Help") || ("help")
-      ) {
-        p = document.createElement("p");
-        p.classList.add("replay");
-        p.innerText = "Which kind of help you need Sir";
-        texts.appendChild(p);
-      }
-      if (
         text.includes("Java tutorial") || text.includes("java tutorial")
       ) {
         p = document.createElement("p");
@@ -81,16 +73,7 @@ recognition.addEventListener("result", (e) => {
         console.log("opening java Tutorial")
         window.open("https://www.javatpoint.com/java-tutorial")
       }
-      if (
-        text.includes("Open Google") || ("open Google") || ("Open google") || ("open google")
-      ) {
-        p = document.createElement("p");
-        p.classList.add("replay");
-        p.innerText = "Opening Google";
-        texts.appendChild(p);
-        console.log("opening Google")
-        window.open("https://www.google.com")
-      }
+      
     if (text.includes("Python tutorial")) {
       p = document.createElement("p");
       p.classList.add("replay");

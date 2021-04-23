@@ -81,6 +81,16 @@ recognition.addEventListener("result", (e) => {
         console.log("opening java Tutorial")
         window.open("https://www.javatpoint.com/java-tutorial")
       }
+      if (
+        text.includes("Open Google") || ("open Google") || ("Open google") || ("open google")
+      ) {
+        p = document.createElement("p");
+        p.classList.add("replay");
+        p.innerText = "Opening Google";
+        texts.appendChild(p);
+        console.log("opening Google")
+        window.open("https://www.google.com")
+      }
     if (text.includes("Python tutorial")) {
       p = document.createElement("p");
       p.classList.add("replay");

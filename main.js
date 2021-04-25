@@ -56,6 +56,14 @@ recognition.addEventListener("result", (e) => {
         texts.appendChild(p);
       }
       if (
+        text.includes("Do you have any plan today") || text.includes("do you have any plan today") 
+      ) {
+        p = document.createElement("p");
+        p.classList.add("replay");
+        p.innerText = "No Sir";
+        texts.appendChild(p);
+      }
+      if (
         text.includes("what is the date") 
       ) {
         let today =new Date()
@@ -75,6 +83,15 @@ recognition.addEventListener("result", (e) => {
         p = document.createElement("p");
         p.classList.add("replay");
         p.innerText = "Hello Sir";
+        texts.appendChild(p);
+      }
+      if (
+        text.includes("tell me a joke")
+      ) {
+        p = document.createElement("p");
+        p.classList.add("replay");
+        var joke="Wife: had ur lunch.?"+"\nHusband: had ur lunch.?"+"\nWife: i m asking you"+"\nHusband : i m asking you"+"\nWife: u copying me.?"+"\nHusband : u copying me?"+"\nWife: lets go shopping"+"\nHusband :Yes i had my lunch"
+        p.innerText =joke;
         texts.appendChild(p);
       }
       if (

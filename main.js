@@ -55,12 +55,39 @@ recognition.addEventListener("result", (e) => {
         p.innerText = "waiting for your command sir";
         texts.appendChild(p);
       }
+      if (
+        text.includes("what is the date") 
+      ) {
+        let today =new Date()
+        let dd=String(today.getDate()).padStart(2,'0');
+        let mm=String(today.getMonth()).padStart(2,'0');
+        let yyyy=today.getFullYear();
+        var todaysDate=dd+"/"+mm+"/"+yyyy
+        p = document.createElement("p");
+        p.classList.add("replay");
+        p.innerText = "Today's date is "+todaysDate;
+        texts.appendChild(p);
+      }
+      
     if (
         text.includes("hello") || text.includes("hay") || text.includes("Hey")
       ) {
         p = document.createElement("p");
         p.classList.add("replay");
         p.innerText = "Hello Sir";
+        texts.appendChild(p);
+      }
+      if (
+        text.includes("what is the time") 
+      ) {
+        let today =new Date();
+        let hh=today.getHours();
+        let min=today.getMinutes();
+        let sec=today.getSeconds();
+        var todaysTime=hh+":"+min+":"+sec
+        p = document.createElement("p");
+        p.classList.add("replay");
+        p.innerText = "The time is "+ todaysTime;
         texts.appendChild(p);
       }
       if (

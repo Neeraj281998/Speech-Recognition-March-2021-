@@ -56,7 +56,7 @@ recognition.addEventListener("result", (e) => {
         texts.appendChild(p);
       }
       if (
-        text.includes("Do you have any plan today") || text.includes("do you have any plan today") 
+        text.includes("do you have any plans today") || text.includes("do you have any plan today") 
       ) {
         p = document.createElement("p");
         p.classList.add("replay");

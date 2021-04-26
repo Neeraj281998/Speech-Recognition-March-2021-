@@ -20,7 +20,7 @@
 14)what are you doing?
 15)Tell me a joke
 16)What is a time?
-17)Today's Date 
+17)What is a Date 
 18)do you have any plans today?
   
 
